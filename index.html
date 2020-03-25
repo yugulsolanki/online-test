@@ -1,0 +1,723 @@
+
+<!doctype html>
+<html>
+
+<head>
+<title>mcq</title>
+<style>
+
+#startbtn{
+	background: green;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+
+}
+#startbtn:hover
+{
+	background: white;
+	color: black;
+	border: 1px solid green;
+	cursor:pointer;
+}
+#show{
+	background: green;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+}
+#show:hover
+{
+	background: white;
+	color: black;
+	border: 1px solid green;
+	cursor:pointer;
+}
+#quest{
+	display:none;
+	margin: 20px 100px 20px 80px;
+	width: 80%;
+	border-radius: 15px;
+	float: left;
+	background: #ffcc99; border:1px solid black;  height:100%;}
+
+body {
+	font-family: 'Muli', sans-serif;
+	background:lightblue;
+	}
+
+#input{
+	margin-bottom: 10px;
+}
+
+
+
+#done_button
+{
+	background: green;
+	border-radius: 5px;
+	border: none;
+	margin-top:20px 100px 20px 80px;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+	transition-duration : 0.5s;
+}
+
+#done_button:hover
+{
+	background: white;
+	color: black;
+	border: 1px solid green;
+	cursor:pointer;
+}
+#finished
+{
+	visibility:hidden;
+	background: #d5ff80;
+	border-radius: 30px;
+	font-size: 40px;
+	width: 500px;
+	padding: 10px 20px 10px 20px;
+	margin-left: 10px;
+	float: left;
+}
+#mcq {
+ 		display: inline;
+ 		}
+ </style>
+
+
+<script>
+
+function clock() {
+     var myTimer = setInterval(myClock, 1000);
+     var c = 7200;
+
+     function myClock() {
+       document.getElementById("demo").innerHTML = --c;
+       if (c == 0) {
+         clearInterval(myTimer);
+
+       }
+     }
+   }
+
+function result()
+{
+
+	var question1=document.questions.question1.value;
+	var question2=document.questions.question2.value;
+	var question3=document.questions.question3.value;
+	var question4=document.questions.question4.value;
+	var question5=document.questions.question5.value;
+	var question6=document.questions.question6.value;
+	var question7=document.questions.question7.value;
+	var question8=document.questions.question8.value;
+	var question9=document.questions.question9.value;
+	var question10=document.questions.question10.value;
+	var question11=document.questions.question11.value;
+	var question12=document.questions.question12.value;
+	var question13=document.questions.question13.value;
+	var question14=document.questions.question14.value;
+	var question15=document.questions.question15.value;
+	var question16=document.questions.question16.value;
+	var question17=document.questions.question17.value;
+	var question18=document.questions.question18.value;
+	var question19=document.questions.question19.value;
+	var question20=document.questions.question20.value;
+	var question21=document.questions.question21.value;
+	var question22=document.questions.question22.value;
+	var question23=document.questions.question23.value;
+	var question24=document.questions.question24.value;
+	var question25=document.questions.question25.value;
+	var question26=document.questions.question26.value;
+	var question27=document.questions.question27.value;
+	var question28=document.questions.question28.value;
+	var question29=document.questions.question29.value;
+	var question30=document.questions.question30.value;
+	var question31=document.questions.question31.value;
+	var question32=document.questions.question32.value;
+	var question33=document.questions.question33.value;
+	var question34=document.questions.question34.value;
+	var question35=document.questions.question35.value;
+	var question36=document.questions.question36.value;
+	var question37=document.questions.question37.value;
+	var question38=document.questions.question38.value;
+	var question39=document.questions.question39.value;
+	var question40=document.questions.question40.value;
+	var question41=document.questions.question41.value;
+	var question42=document.questions.question42.value;
+	var question43=document.questions.question43.value;
+	var question44=document.questions.question44.value;
+	var question45=document.questions.question45.value;
+	var question46=document.questions.question46.value;
+	var question47=document.questions.question47.value;
+	var question48=document.questions.question48.value;
+	var question49=document.questions.question49.value;
+	var question50=document.questions.question50.value;
+	var question51=document.questions.question51.value;
+	var question52=document.questions.question52.value;
+	var question53=document.questions.question53.value;
+	var question54=document.questions.question54.value;
+	var question55=document.questions.question55.value;
+	var question56=document.questions.question56.value;
+	var question57=document.questions.question57.value;
+	var question58=document.questions.question58.value;
+	var question59=document.questions.question59.value;
+	var question60=document.questions.question60.value;
+
+
+	var count =0;
+	var wrongcount=0;
+	var score=0;
+	var notanswered=0;
+
+
+	if (question1=="Singleton class") {
+		count++;
+	}else if (question1=="Friend_class") {wrongcount++;}
+
+	if (question2=="Friend constructor") {
+		count++;
+	}else if (question2=="Default constructor") {wrongcount++;}
+
+	if (question3=="Derived class pointer cannot point to base class" ) {
+		count++;
+	}else if (question3=="Base class pointer cannot point to derived class") {wrongcount++;}
+
+	if (question4=="Friend function") {
+		count++;
+	}else if (question4=="Static function") {wrongcount++;}
+
+	if (question5=="Dynamic binding") {
+		count++;
+	} else if (question5=="Dynamic Typing") {wrongcount++;}
+
+	if (question6=="Member function") {
+		count++;
+	} else if (question6=="Member Variable") {wrongcount++;}
+
+	if (question7=="Default arguments") {
+		count++;
+	} else if (question7=="Call by pointer") {wrongcount++;}
+
+	if (question8=="0" ) {
+		count++;
+	}  else if (question8=="13") {wrongcount++;}
+
+	if (question9=="Object") {
+		count++;
+	} else if (question9=="Class") {wrongcount++;}
+
+	if (question10=="Data hiding") {
+		count++;
+	}  else if (question10=="Data binding") {wrongcount++;}
+
+	if (question11=="object") {
+		count++;
+	}  else if (question11=="function") {wrongcount++;}
+
+	if (question12=="Composition") {
+		count++;
+	}  else if (question12=="Inheritance") {wrongcount++;}
+
+	if (question13=="2" ) {
+		count++;
+	}  else if (question13=="3") {wrongcount++;}
+
+	if (question14=="Class") {
+		count++;
+	} else if (question14=="string") {wrongcount++;}
+
+	if (question15=="Dynamic loading") {
+		count++;
+	}  else if (question15=="Dynamic binding") {wrongcount++;}
+
+	if (question16=="A constructor is called at the time of declaration of an object.") {
+		count++;
+	} else if (question16=="A constructor is called at the time of use of an object.") {wrongcount++;}
+
+	if (question17=="Ad-hoc polymorphism") {
+		count++;
+	}  else if (question17=="Pseudo polymorphism") {wrongcount++;}
+
+	if (question18=="Bottom-up" ) {
+		count++;
+	}  else if (question18=="Top-down") {wrongcount++;}
+
+	if (question19=="The types of arguments are different.") {
+		count++;
+	}  else if (question19=="The number of argument is same.") {wrongcount++;}
+
+	if (question20=="class data members are private by default while that of structure are public by default") {
+		count++;
+	}  else if (question20=="Pointer to structure or classes cannot be declared.") {wrongcount++;}
+
+	if (question21=="Encapsulation") {
+	count++;
+	}  else if (question21=="Abstraction") {wrongcount++;}
+
+	if (question22=="Dynamic binding") {
+		count++;
+	}   else if (question22=="Dynamic casting") {wrongcount++;}
+
+	if (question23=="Using Virtual tables" ) {
+		count++;
+	}   else if (question23=="Using C++ tables") {wrongcount++;}
+
+	if (question24=="Yes") {
+		count++;
+	}   else if (question24=="no") {wrongcount++;}
+
+	if (question25=="ostream") {
+		count++;
+	}  else if (question25=="istream") {wrongcount++;}
+
+	if (question26=="constructor") {
+		count++;
+	}  else if (question26=="destructor") {wrongcount++;}
+
+	if (question27=="Initialize objects") {
+		count++;
+	} else if (question27=="Construct a new function") {wrongcount++;}
+
+	if (question28=="A run-time error." ) {
+		count++;
+	} else if (question28=="A syntax error") {wrongcount++;}
+
+	if (question29=="Virtual function") {
+		count++;
+	}  else if (question29=="Operator function") {wrongcount++;}
+
+	if (question30=="C++ allows dynamic type checking.") {
+		count++;
+	}  else if (question30=="C++ allows static member function be of type const") {wrongcount++;}
+
+	if (question31=="It lowers the maintenance cost") {
+		count++;
+	} else if (question31=="It reduces the compilation time") {wrongcount++;}
+
+
+	if (question32=="this->x") {
+		count++;
+	}  else if (question32=="this.x") {wrongcount++;}
+
+	if (question33=="Base class object will call base class function and derived class object will call derived class function" ) {
+		count++;
+	} else if (question33=="Only derived class function will get called irrespective of object") {wrongcount++;}
+
+	if (question34=="Protected data members") {
+		count++;
+	}   else if (question34=="Member functions") {wrongcount++;}
+
+	if (question35=="Distributive") {
+		count++;
+	} else if (question35=="Hierarchical") {wrongcount++;}
+
+	if (question36=="?:") {
+		count++;
+	}  else if (question36=="->") {wrongcount++;}
+
+
+	if (question37=="From inside the constructor") {
+		count++;
+	}  else if (question37=="From inside the main()") {wrongcount++;}
+
+
+	if (question38=="It speeds up execution" ) {
+		count++;
+	}   else if (question38 =="It slows down execution") {wrongcount++;}
+
+	if (question39=="iostream.h") {
+		count++;
+	}  else if (question39=="iomanip.h") {wrongcount++;}
+
+	if (question40=="operator") {
+		count++;
+	} else if (question40=="overload") {wrongcount++;}
+
+	if (question41=="It cannot have a constructor") {
+		count++;
+	}  else if (question41=="It is not allowed") {wrongcount++;}
+
+
+	if (question42=="friend") {
+		count++;
+	} else if (question42=="protected") {wrongcount++;}
+
+
+	if (question43=="Structures can have functions as members") {
+		count++;
+	}  else if (question43=="Classes cannot have data as protected members") {wrongcount++;}
+
+	if (question44=="Making at least one member function as pure virtual function") {
+		count++;
+	} else if (question44=="Making at least one member function as virtual function") {wrongcount++;}
+
+	if (question45=="private") {
+		count++;
+	}  else if (question45=="friend") {wrongcount++;}
+
+	if (question46=="A static data member is shared among all the object of the class") {
+		count++;
+	}  else if (question46=="A static data member can be accessed directly from main()") {wrongcount++;}
+
+
+	if (question47=="Inheritance") {
+		count++;
+	} else if (question47=="Abstraction") {wrongcount++;}
+
+	if (question48=="Object is an instance of a class" ) {
+		count++;
+	} else if (question48=="Class is an instance of object") {wrongcount++;}
+
+	if (question49=="no") {
+		count++;
+	}else if (question49=="yes") {wrongcount++;}
+
+	if (question50=="yes") {
+		count++;
+	} else if (question50=="Runtime Error") {wrongcount++;}
+
+
+	if (question51=="yes") {
+		count++;
+	} else if (question51=="no") {wrongcount++;}
+
+	if (question52=="yes") {
+		count++;
+	} else if (question52=="no") {wrongcount++;}
+
+	if (question53=="In different work space") {
+		count++;
+	} else if (question53=="We can't have") {wrongcount++;}
+
+	if (question54=="yes") {
+		count++;
+	} else if (question54=="no") {wrongcount++;}
+
+	if (question55=="yes") {
+		count++;
+	} else if (question55=="no") {wrongcount++;}
+
+	if (question56=="yes") {
+		count++;
+	} else if (question56=="no") {wrongcount++;}
+
+
+	if (question57=="1") {
+		count++;
+	} else if (question57=="2") {wrongcount++;}
+
+	if (question58=="A class with atleast one pure virtual function" ) {
+		count++;
+	} else if (question58=="A class with abstract keyword") {wrongcount++;}
+
+	if (question59=="There is no limit") {
+		count++;
+	} else if (question59=="256") {wrongcount++;}
+
+	if (question60=="0") {
+		count++;
+	} else if (question60=="Undefined") {wrongcount++;}
+
+
+
+	score=count*2-wrongcount*2;
+	notanswered=60-count-wrongcount;
+
+	var remarks = ["FAILED! you really need to work hard","Pass (3rd div) satisfactory","Pass (2nd div) good work keep going ","1st DIVISION very good","FULL MARKS! Excellent "];
+
+	var i;
+
+	if (score<39.6) {i=0;}
+	if (score>=39.6 && score<=58.8) {i=1;}
+	if (score>58.8 && score<72) {i=2;}
+	if (score>=72 && score<120) {i=3;}
+	if (score==120){i=4;}
+
+
+
+	document.getElementById("finished").style.visibility ="visible";
+
+	document.getElementById("correct_ans").innerHTML ="you got "+count+" questions correct and "+wrongcount+" questions incorrect and "+notanswered+" unanswered : total score ="+score+"marks";
+	document.getElementById("remark").innerHTML =remarks[i];
+}
+
+
+</script>
+</head>
+
+<body>
+
+
+<h1 align="center">C++ test based on OOPS concepts</h1>
+<h3 align="left">Type: multiple choice questions</h3>
+<h3 align="right">Time limit:120min or 7200seconds</h3>
+<h3 align="left">~For correct answer +2 marks and -2 marks for wrong answer.</h3>
+<p id="demo"></p>
+<button id="startbtn" onclick="clock()">Start test</button>
+
+<button id="show"  onclick="document.getElementById('quest').style.display='block'">show questions</button>
+<hr>
+<hr>
+<form id= "quest" name ="questions">
+
+
+<p>1. Which of the following type of class allows only one object of it to be created?</p>
+<input id="mcq" type="radio" name= "question1" value="Singleton class">Singleton class<br>
+<input id="mcq" type="radio" name= "question1" value="Friend_class">Friend class<br>
+
+<p>2.Which of the following is not a type of constructor?</p>
+<input id="mcq" type="radio" name= "question2" value="Friend constructor">Friend constructor<br>
+<input id="mcq" type="radio" name= "question2" value="Default constructor">Default constructor<br>
+
+
+<p>3.Which of the following statements is correct?</p>
+<input id="mcq" type="radio" name= "question3" value="Base class pointer cannot point to derived class"> Base class pointer cannot point to derived class.<br>
+<input id="mcq" type="radio" name= "question3" value="Derived class pointer cannot point to base class">Derived class pointer cannot point to base class.<br>
+
+<p>4.Which of the following is not the member of class?</p>
+<input id="mcq" type="radio" name= "question4" value="Static function">Static function<br>
+<input id="mcq" type="radio" name= "question4" value="Friend function">Friend function<br>
+
+
+<p>5.Which of the following concepts means determining at runtime what method to invoke?</p>
+<input id="mcq" type="radio" name= "question5" value="Dynamic Typing">Dynamic Typing<br>
+<input id="mcq" type="radio" name= "question5" value="Dynamic binding">Dynamic binding<br>
+
+
+<p>6.Which of the following term is used for a function defined inside a class?</p>
+<input id="mcq" type="radio" name= "question6" value="Member Variable">Member Variable<br>
+<input id="mcq" type="radio" name= "question6" value="Member function">Member function<br>
+
+<p>7.Which of the following concept of oops allows compiler to insert arguments in a function call if it is not specified?</p>
+<input id="mcq" type="radio" name= "question7" value="Default arguments">Default arguments<br>
+<input id="mcq" type="radio" name= "question7" value="Call by pointer">Call by pointer<br>
+
+<p>8.How many instances of an abstract class can be created?</p>
+<input id="mcq" type="radio" name= "question8" value="13">13<br>
+<input id="mcq" type="radio" name= "question8" value="0">0<br>
+
+<p>9.Which of the following cannot be friend?</p>
+<input id="mcq" type="radio" name= "question9" value="Class">Class<br>
+<input id="mcq" type="radio" name= "question9" value="Object">Object<br>
+
+<p>10.Which of the following concepts of OOPS means exposing only necessary information to client?</p>
+<input id="mcq" type="radio" name= "question10" value="Data hiding">Data hiding<br>
+<input id="mcq" type="radio" name= "question10" value="Data binding">Data binding<br>
+
+<p>11.cout is a/an __________ .</p>
+<input id="mcq" type="radio" name= "question11" value="function">function<br>
+<input id="mcq" type="radio" name= "question11" value="object">object<br>
+
+<p>12.Which of the following concepts provides facility of using object of one class inside another class?</p>
+<input id="mcq" type="radio" name= "question12" value="Composition">Composition<br>
+<input id="mcq" type="radio" name= "question12" value="Inheritance">Inheritance<br>
+
+<p>13.How many types of polymorphisms are supported by C++?</p>
+<input id="mcq" type="radio" name= "question13" value="2">2<br>
+<input id="mcq" type="radio" name= "question13" value="3">3<br>
+
+<p>14.Which of the following is an abstract data type?</p>
+<input id="mcq" type="radio" name= "question14" value="string">string<br>
+<input id="mcq" type="radio" name= "question14" value="Class">Class<br>
+
+<p>15.Which of the following concepts means adding new components to a program as it runs?</p>
+<input id="mcq" type="radio" name= "question15" value="Dynamic binding">Dynamic binding<br>
+<input id="mcq" type="radio" name= "question15" value="Dynamic loading">Dynamic loading<br>
+
+<p>16.Which of the following statement is correct?</p>
+<input id="mcq" type="radio" name= "question16" value="A constructor is called at the time of declaration of an object.">A constructor is called at the time of declaration of an object.<br>
+<input id="mcq" type="radio" name= "question16" value="A constructor is called at the time of use of an object.">A constructor is called at the time of use of an object.<br>
+
+<p>17.Which of the following correctly describes overloading of functions?</p>
+<input id="mcq" type="radio" name= "question17" value="Ad-hoc polymorphism">Ad-hoc polymorphism<br>
+<input id="mcq" type="radio" name= "question17" value="Pseudo polymorphism">Pseudo polymorphism<br>
+
+<p>18.Which of the following approach is adapted by C++?</p>
+<input id="mcq" type="radio" name= "question18" value="Top-down">Top-down<br>
+<input id="mcq" type="radio" name= "question18" value="Bottom-up">Bottom-up<br>
+
+<p>19.Which of the following is correct about function overloading?</p>
+<input id="mcq" type="radio" name= "question19" value="The types of arguments are different.">The types of arguments are different.<br>
+<input id="mcq" type="radio" name= "question19" value="The number of argument is same.">The number of argument is same.<br>
+
+<p>20.Which of the following is correct about class and structure?</p>
+<input id="mcq" type="radio" name= "question20" value="Pointer to structure or classes cannot be declared.">Pointer to structure or classes cannot be declared.<br>
+<input id="mcq" type="radio" name= "question20" value="class data members are private by default while that of structure are public by default.">class data members are private by default while that of structure are public by default.<br>
+
+<p>21.Which of the following concepts means wrapping up of data and functions together?</p>
+<input id="mcq" type="radio" name= "question21" value="Abstraction">Abstraction<br>
+<input id="mcq" type="radio" name= "question21" value="Encapsulation">Encapsulation<br>
+
+<p>22.Which of the following concepts means waiting until runtime to determine which function to call?</p>
+<input id="mcq" type="radio" name= "question22" value="Dynamic casting">Dynamic casting<br>
+<input id="mcq" type="radio" name= "question22" value="Dynamic binding">Dynamic binding<br>
+
+<p>23.How "Late binding" is implemented in C++?</p>
+<input id="mcq" type="radio" name= "question23" value="Using C++ tables">Using C++ tables<br>
+<input id="mcq" type="radio" name= "question23" value="Using Virtual tables">Using Virtual tables<br>
+
+<p>24.Can any function call itself?</p>
+<input id="mcq" type="radio" name= "question24" value="Yes">Yes<br>
+<input id="mcq" type="radio" name= "question24" value="no">no<br>
+
+<p>25.Which of the following is the correct class of the object cout?</p>
+<input id="mcq" type="radio" name= "question25" value="istream">istream<br>
+<input id="mcq" type="radio" name= "question25" value="ostream">ostream<br>
+
+<p>26.Which of the following cannot be used with the keyword virtual?</p>
+<input id="mcq" type="radio" name= "question26" value="constructor">constructor<br>
+<input id="mcq" type="radio" name= "question26" value="destructor">destructor<br>
+
+<p>27.Which of the following functions are performed by a constructor?</p>
+<input id="mcq" type="radio" name= "question27" value="Construct a new function">Construct a new function<br>
+<input id="mcq" type="radio" name= "question27" value="Initialize objects">Initialize objects<br>
+
+<p>28.Which of the following problem causes an exception?</p>
+<input id="mcq" type="radio" name= "question28" value="A syntax error">A syntax error<br>
+<input id="mcq" type="radio" name= "question28" value="A run-time error">A run-time error<br>
+
+<p>29.Which of the following concepts is used to implement late binding?</p>
+<input id="mcq" type="radio" name= "question29" value="Virtual function">Virtual function<br>
+<input id="mcq" type="radio" name= "question29" value="Operator function">Operator function<br>
+
+<p>30.Which of the following statement is correct?</p>
+<input id="mcq" type="radio" name= "question30" value="C++ allows dynamic type checking.">C++ allows dynamic type checking.<br>
+<input id="mcq" type="radio" name= "question30" value="C++ allows static member function be of type const">C++ allows static member function be of type const<br>
+
+<p>31.Which of the following factors supports the statement that reusability is a desirable feature of a language?</p>
+<input id="mcq" type="radio" name= "question31" value="It lowers the maintenance cost">It lowers the maintenance cost<br>
+<input id="mcq" type="radio" name= "question31" value="It reduces the compilation time">It reduces the compilation time<br>
+
+<p>32.Which of the following ways are legal to access a class data member using this pointer?</p>
+<input id="mcq" type="radio" name= "question32" value="this->x">this->x<br>
+<input id="mcq" type="radio" name= "question32" value="this.x">this.x<br>
+
+<p>33.What happens if the base and derived class contains definition of a function with same prototype?</p>
+<input id="mcq" type="radio" name= "question33" value="Only derived class function will get called irrespective of object">Only derived class function will get called irrespective of object<br>
+<input id="mcq" type="radio" name= "question33" value="Base class object will call base class function and derived class object will call derived class function">Base class object will call base class function and derived class object will call derived class function<br>
+
+<p>34.Which of the following are available only in the class hierarchy chain?</p>
+<input id="mcq" type="radio" name= "question34" value="Protected data members">Protected data members<br>
+<input id="mcq" type="radio" name= "question34" value="Member functions">Member functions<br>
+
+<p>35.Which of the following is not a type of inheritance?</p>
+<input id="mcq" type="radio" name= "question35" value="Distributive">Distributive<br>
+<input id="mcq" type="radio" name= "question35" value="Hierarchical">Hierarchical<br>
+
+<p>36.Which of the following operators cannot be overloaded?</p>
+<input id="mcq" type="radio" name= "question36" value="->">-><br>
+<input id="mcq" type="radio" name= "question36" value="?:">?:<br>
+
+<p>37.In which of the following a virtual call is resolved at the time of compilation?</p>
+<input id="mcq" type="radio" name= "question37" value="From inside the constructor">From inside the constructor<br>
+<input id="mcq" type="radio" name= "question37" value="From inside the main()">From inside the main()<br>
+
+<p>38.Which of the following statements regarding inline functions is correct?</p>
+<input id="mcq" type="radio" name= "question38" value="It speeds up execution">It speeds up execution<br>
+<input id="mcq" type="radio" name= "question38" value="It slows down execution">It slows down execution<br>
+
+<p>39.Which of the following header file includes definition of cin and cout?</p>
+<input id="mcq" type="radio" name= "question39" value="iomanip.h">iomanip.h<br>
+<input id="mcq" type="radio" name= "question39" value="iostream.h">iostream.h<br>
+
+<p>40.Which of the following keyword is used to overload an operator?</p>
+<input id="mcq" type="radio" name= "question40" value="overload">overload<br>
+<input id="mcq" type="radio" name= "question40" value="operator">operator<br>
+
+<p>41.What will happen if a class is not having any name?</p>
+<input id="mcq" type="radio" name= "question41" value="It cannot have a constructor">It cannot have a constructor<br>
+<input id="mcq" type="radio" name= "question41" value="It is not allowed">It is not allowed<br>
+
+<p>42.Which of the following is an invalid visibility label while inheriting a class?</p>
+<input id="mcq" type="radio" name= "question42" value="protected">protected<br>
+<input id="mcq" type="radio" name= "question42" value="friend">friend<br>
+
+<p>43.Which of the following statements is correct in C++?</p>
+<input id="mcq" type="radio" name= "question43" value="Classes cannot have data as protected members">Structures can have functions as members<br>
+<input id="mcq" type="radio" name= "question43" value="Structures can have functions as members">Structures can have functions as members<br>
+
+<p>44.Which of the following is used to make an abstract class?</p>
+<input id="mcq" type="radio" name= "question44" value="Making at least one member function as virtual function">Making at least one member function as virtual function<br>
+<input id="mcq" type="radio" name= "question44" value="Making at least one member function as pure virtual function">Making at least one member function as pure virtual function<br>
+
+<p>45.Which of the following access specifier is used as a default in a class definition?</p>
+<input id="mcq" type="radio" name= "question45" value="private">private<br>
+<input id="mcq" type="radio" name= "question45" value="friend">friend<br>
+
+<p>46.What is correct about the static data member of a class?</p>
+<input id="mcq" type="radio" name= "question46" value="A static data member is shared among all the object of the class">A static data member is shared among all the object of the class<br>
+<input id="mcq" type="radio" name= "question46" value="A static data member can be accessed directly from main()">A static data member can be accessed directly from main()<br>
+
+<p>47.Which of the following provides a reuse mechanism?</p>
+<input id="mcq" type="radio" name= "question47" value="Inheritance">Inheritance<br>
+<input id="mcq" type="radio" name= "question47" value="Abstraction">Abstraction<br>
+
+<p>48.Which of the following statement is correct?</p>
+<input id="mcq" type="radio" name= "question48" value="Class is an instance of object">Class is an instance of object<br>
+<input id="mcq" type="radio" name= "question48" value="Object is an instance of a class">Object is an instance of a class<br>
+
+<p>49.Can we create object of Abstract class?</p>
+<input id="mcq" type="radio" name= "question49" value="yes">yes<br>
+<input id="mcq" type="radio" name= "question49" value="no">no<br>
+
+<p>50.Can a for loop contain another for loop?</p>
+<input id="mcq" type="radio" name= "question50" value="Runtime Error">Runtime Error<br>
+<input id="mcq" type="radio" name= "question50" value="yes">yes<br>
+
+<p>51.Is const better than #define?</p>
+<input id="mcq" type="radio" name= "question51" value="yes">yes<br>
+<input id="mcq" type="radio" name= "question51" value="no">no<br>
+
+<p>52.Can we create array of reference?</p>
+<input id="mcq" type="radio" name= "question52" value="yes">yes<br>
+<input id="mcq" type="radio" name= "question52" value="no">no<br>
+
+<p>53.When can we have two classes with same name?</p>
+<input id="mcq" type="radio" name= "question53" value="We can't have">We can't have<br>
+<input id="mcq" type="radio" name= "question53" value="In different work space">In different work space<br>
+
+<p>54.Can we create our own workspace?</p>
+<input id="mcq" type="radio" name= "question54" value="yes">yes<br>
+<input id="mcq" type="radio" name= "question54" value="no">no<br>
+
+<p>55.Can we assign null to void pointer?</p>
+<input id="mcq" type="radio" name= "question55" value="yes">yes<br>
+<input id="mcq" type="radio" name= "question55" value="no">no<br>
+
+<p>56.Can a class contain another class in it ?</p>
+<input id="mcq" type="radio" name= "question56" value="yes">yes<br>
+<input id="mcq" type="radio" name= "question56" value="no">no<br>
+
+<p>57.What is the size of empty class?</p>
+<input id="mcq" type="radio" name= "question57" value="1">1<br>
+<input id="mcq" type="radio" name= "question57" value="2">2<br>
+
+<p>58.What is abstract class?</p>
+<input id="mcq" type="radio" name= "question58" value="A class with abstract keyword">A class with abstract keyword<br>
+<input id="mcq" type="radio" name= "question58" value="A class with atleast one pure virtual function">A class with atleast one pure virtual function<br>
+
+<p>59.How many object can be created of a Class in C++?</p>
+<input id="mcq" type="radio" name= "question59" value="There is no limit">There is no limit<br>
+<input id="mcq" type="radio" name= "question59" value="256">256<br>
+
+<p>60.What is size of void in C++?</p>
+<input id="mcq" type="radio" name= "question60" value="Undefined">Undefined<br>
+<input id="mcq" type="radio" name= "question60" value="0">0<br>
+
+
+
+<input id="done_button" type="button" value="submit" onclick="result();">
+
+</form>
+<div id ="finished">
+<p id ="correct_ans"></p>
+<p id="remark"></p>
+</div>
+</body>
+</html>
